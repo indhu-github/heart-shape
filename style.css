@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  .heart-shape{
+    position: relative;
+    width:100px;
+    height: 100px;
+    background-color: #e22e2e;
+    transform: rotate(45deg);
+  }
+   .heart-shape::before,.heart-shape::after{
+     content: '';
+    position: absolute;
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e22e2e;
+  }
+  .heart-shape::before{
+    left:-45px;
+  }
+  .heart-shape::after{
+    top:-45px;
+  } 
